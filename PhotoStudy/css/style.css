@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url(/img/back_header.jpg);
+  background-image: url(../img/back_header.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -217,7 +217,7 @@ input[type="radio"] {
 
 
 div.prv {
-  background-image: url("/img/prv.png");
+  background-image: url("../img/prv.png");
   background-size: 100%;
   cursor: pointer;
   position: relative;
@@ -228,7 +228,7 @@ div.prv {
 }
 
 div.nxt {
-  background-image: url("/img/nxt.png");
+  background-image: url("../img/nxt.png");
   background-size: 100%;
   cursor: pointer;
   position: relative;
@@ -246,7 +246,7 @@ div.nxt {
 
 /*************** слайдер локаций фотостудии *************/
 section.src {
-  background-image: url(/img/back_section.jpg);
+  background-image: url(../img/back_section.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -315,7 +315,7 @@ section.src {
 
 #about_us_box1 {
   height: 340px;
-  background-image: url(/img/press_photo1.jpg);
+  background-image: url(../img/press_photo1.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -347,7 +347,7 @@ section.src {
 
 #about_us_box2 {
   height: 340px;
-  background-image: url(/img/press_photo2.jpg);
+  background-image: url(../img/press_photo2.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -355,7 +355,7 @@ section.src {
 
 #about_us_box3 {
   height: 340px;
-  background-image: url(/img/press_photo3.jpg);
+  background-image: url(../img/press_photo3.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -363,7 +363,7 @@ section.src {
 
 #about_us_box4 {
   height: 340px;
-  background-image: url(/img/press_photo4.jpg);
+  background-image: url(../img/press_photo4.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -371,7 +371,7 @@ section.src {
 
 #about_us_box5 {
   height: 340px;
-  background-image: url(/img/press_photo5.jpg);
+  background-image: url(../img/press_photo5.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -379,7 +379,7 @@ section.src {
 
 #about_us_box6 {
   height: 340px;
-  background-image: url(/img/press_photo6.jpg);
+  background-image: url(../img/press_photo6.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -411,7 +411,7 @@ section.src {
 
 #about_us_box7 {
   height: 340px;
-  background-image: url(/img/press_photo7.jpg);
+  background-image: url(../img/press_photo7.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -442,7 +442,7 @@ section.src {
 
 #about_us_box8 {
   height: 340px;
-  background-image: url(/img/press_photo8.jpg);
+  background-image: url(../img/press_photo8.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 135px;
@@ -475,7 +475,7 @@ section.src {
 /*************** секция услуг *************/
 /************** отправка формы ************/
 .sign_up_form {
-  background-image: url(/img/back_form_sign_up.jpg);
+  background-image: url(../img/back_form_sign_up.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -495,7 +495,7 @@ section.src {
 .sign_up {
   height: 535px;
   width: 1145px;
-  background-image: url(/img/back_form.jpg);
+  background-image: url(../img/back_form.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   /*   display: flex;
@@ -578,7 +578,7 @@ section.src {
 }
 
 footer {
-  background-image: url(/img/back_footer.jpg);
+  background-image: url(../img/back_footer.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 100px;
