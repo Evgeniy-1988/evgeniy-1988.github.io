@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 logo">
+            <img src="/img/KeepMemory_logo.png" alt="logotype" />
+          </div>
+          <div class="col-lg-8">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Локации</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Галерея</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <a class="btn btn-primary" href="#" role="button">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDER -->
+      <div class="container">
+        <div class="row slider_header">
+          <div class="col-lg-12 slider_text">
+            <h1>Фотостудия</h1>
+            <div class="dots_container">
+              <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+              <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+              <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="item">
+              <!-- <img src="/" alt="Первый слайд"> -->
+              <div class="slideText">
+                <p>
+                  <strong>Лучшее решение для ваших фотографий.</strong>
+                  <span>В наших современных локациях вы сможете почувствовать себя
+                    героем настоящего фильма, ощутить уют родного дома или
+                    просто сделать фото на паспорт.</span>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <!-- <img src="/" alt="Второй слайд"> -->
+              <div class="slideText">
+                <p>
+                  <strong>Вы на снимке, как картинка!</strong>
+                  <span>Группа выдвигает идеи по заданной теме. Все идеи
+                    фиксируются, в том числе на первый взгляд абсурдные.
+                    Критиковать нельзя.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <!-- <img src="/" alt="Третий слайд"> -->
+              <div class="slideText">
+                <p>
+                  <strong>Искусство останавливать время.</strong>
+                  <span>Каждая идея полезна уже потому, что она стимулирует другие.
+                    Стремитесь развивать, комбинировать и улучшать высказанные
+                    ранее идеи, получать от них новые ассоциативные идеи.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDER -->    
+    </header>
+
+    <section class="container location">
+      <a href="#">Локации</a>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container_img">
+            <div id="slider_presents">
+              <input type="radio" name="slider" id="s1">
+              <input type="radio" name="slider" id="s2">
+              <input type="radio" name="slider" id="s3" checked>
+              <input type="radio" name="slider" id="s4">
+              <input type="radio" name="slider" id="s5">
+          
+              <label for="s1" id="slide1"><img src="/img/loc_left_2.jpg" alt="photostudy_decoration"></label>
+              <label for="s2" id="slide2"><img src="/img/loc_left.jpg" alt="photostudy_decoration"></label>
+              <label for="s3" id="slide3"><img src="/img/loc_1.jpg" alt="photostudy_decoration"></label>
+              <label for="s4" id="slide4"><img src="/img/loc_right.jpg" alt="photostudy_decoration"></label>
+              <label for="s5" id="slide5"><img src="/img/loc_right_2.jpg" alt="photostudy_decoration"></label>
+            </div>
+          
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 slider2_nav">
+                  <div class="nxt"><a href="" class="nxt"></a></div>
+                  <div class="prv"><a href="" class="prv"></a></div>
+                  <div class="press_text"><p>Студия предлагает в аренду всё, что нужно для организации и 
+                    проведения коммерческих фотосессий, портретных и других съёмок на 
+                    месте и с выездом. Здесь можно арендовать готовые локации и взять 
+                    напрокат фотокамеры, осветительные приборы и другое необходимое 
+                    оборудование на выгодных условиях.</p></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="container-fluid src">
+      <div class="container">
+        <div class="services"><a href="#">Услуги</a></div>
+        <div class="row">
+          <div class="col-lg-3">
+           <div class="detail_srv">
+            <h2>Аренда фотостудии пн-пт</h2>
+            <p class="price">800 руб</p>
+              <ul>
+                <li>1 особенность</li>
+                <li>2 особенность</li>
+                <li>3 особенность</li>
+                <li>4 особенность</li>
+                <li>5 особенность</li>
+              </ul>
+              <button type="button" class="btn btn-primary detail">Подробнее</button>
+           </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="detail_srv">
+             <h2>Аренда фотостудии пн-пт</h2>
+             <p class="price">800 руб</p>
+               <ul>
+                 <li>1 особенность</li>
+                 <li>2 особенность</li>
+                 <li>3 особенность</li>
+                 <li>4 особенность</li>
+                 <li>5 особенность</li>
+               </ul>
+               <button type="button" class="btn btn-primary detail">Подробнее</button>
+            </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="detail_srv">
+             <h2>Аренда фотостудии пн-пт</h2>
+             <p class="price">800 руб</p>
+               <ul>
+                 <li>1 особенность</li>
+                 <li>2 особенность</li>
+                 <li>3 особенность</li>
+                 <li>4 особенность</li>
+                 <li>5 особенность</li>
+               </ul>
+               <button type="button" class="btn btn-primary detail">Подробнее</button>
+            </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="detail_srv">
+             <h2>Аренда фотостудии пн-пт</h2>
+             <p class="price">800 руб</p>
+               <ul>
+                 <li>1 особенность</li>
+                 <li>2 особенность</li>
+                 <li>3 особенность</li>
+                 <li>4 особенность</li>
+                 <li>5 особенность</li>
+               </ul>
+               <button type="button" class="btn btn-primary detail">Подробнее</button>
+            </div>
+           </div>
+        </div>
+      </div>
+  </section>
+<section class="container about_us">
+  <a href="#">О нас</a>
+  <div class="row">
+    <div class="col-lg-6">
+      <div id="about_us_box1">
+        <p><span>Лучшие снимки</span><br>Фотографии, сделанные в нашей студии,
+          могут по праву считаться самыми стильными.</p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div id="about_us_box2">
+        <p><span></span><br></p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div id="about_us_box3">
+        <p><span></span><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3">
+      <div id="about_us_box4">
+        <p><span></span><br></p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div id="about_us_box5">
+        <p><span></span><br></p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div id="about_us_box6">
+        <p><span>Лучшие декорации</span><br>Все локации тщательно продумываются лучшими дизайнерами и собираются лучшими декораторами области.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div id="about_us_box7">
+        <p><span>Лучшие снимки</span><br>Фотографии, сделанные в нашей студии,
+          могут по праву считаться самыми стильными.</p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div id="about_us_box8">
+        <p><span>Лучшие декорации</span><br>Все локации тщательно продумываются лучшими дизайнерами и собираются лучшими декораторами области. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid sign_up_form">
+  <div class="container">
+    <div class="nav_sign"><a href="#">Запишись</a></div>
+    <div class="row">
+      <div class="col-lg-12 box_sign_up_form">
+      <form action="" method="" class="sign_up">
+        <span>Оставьте заявку</span>
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input class="form-control" name="name" type="text" placeholder="Введите ваше ФИО...">
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input class="form-control" name="email" type="email" placeholder="Ваш E-mail...">
+        </div>
+        <div class="form-group">
+          <i class="fas fa-phone-alt"></i>
+          <input class="form-control" name="phone_number" type="tel" id="phone" placeholder="Ваш телефон...">
+        </div>
+        <button type="button" class="btn btn-primary send d-flex justify-content-center">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+<section class="container">
+  <div class="contact"><a href="#">Запишись</a></div>
+<div class="row">
+  <div class="col-lg-12 contact_box">
+      <p>
+        Наш E-mail: s_vlm@mail.ru<br>
+        Наш телефон: 8-(967)-633-50-46<br>
+        Наш адрес: ул. Машинная, д. 29Б. 
+      </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 contact_box_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3127955463783!2d60.6296175450411!3d56.80880233825869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ec83d4a5171%3A0x27c56f4f9676dea9!2z0JzQsNGI0LjQvdC90LDRjyDRg9C7Liwg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1581237383798!5m2!1sru!2sua"></iframe>
+  </div>
+</div>
+</section>
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 social_networks">
+      <a href="#"><img src="/img/facebook-logo.png" alt="facebook" class="networks__logo"></a>
+      <a href="#"><img src="/img/instagram.png" alt="instagram" class="networks__logo"></a>
+      <a href="#"><img src="/img/vk-social-network-logo.png" alt="vk" class="networks__logo"></a>
+      </div>
+      <div class="col-lg-6 author">
+        <p>Vladimir Son</br>
+          (c) Copyright 2019 Licensed
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/4b833c7d33.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#phone").mask("+7 (999) 999-9999");
+    });
+    </script>
+  </body>
+</html>

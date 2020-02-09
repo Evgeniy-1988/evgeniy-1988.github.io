@@ -1,0 +1,603 @@
+﻿/* font-family: "Gotham Pro Light";
+font-family: "Gotham Pro Black";
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotham Pro Light";
+}
+
+header {
+  background-image: url(/img/back_header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.nav {
+  margin-top: 60px;
+}
+.nav-link{
+  color: #ffffff;
+  transition: 300ms ease;
+}
+.nav-link:hover{
+  color: #ffffff;
+  text-shadow: 0px 0px 3px rgb(170, 155, 255);
+  text-decoration: underline;
+}
+.btn-primary {
+  margin-top: 60px;
+  width: 195px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #7e5d4c;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #5d6298;
+  color: #ffffff;
+}
+
+/* СЛАЙДЕР */
+
+.slider_header {
+  height: 700px;
+  margin-top: 60px;
+}
+
+/* Заголовок слайда */
+.slideText {
+  color: #fff;
+  font-size: 35px;
+  max-width: 75%;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.slider_text h1 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.slideText strong {
+  display: inline-block;
+  line-height: 80px;
+  font-weight: bold;
+  font-family: "Gotham Pro Black";
+  font-size: 4rem;
+}
+
+.slideText span {
+  margin-top: 50px;
+  display: inline-block;
+  max-width: 65%;
+  font-size: 1.375rem;
+}
+
+/* доты */
+.dots_container {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.active,
+.slider-dots_item {
+  display: block;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 20px 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: rgb(134, 134, 134);
+}
+
+/* Анимация слайдов */
+.slider_text .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.location>a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+/*************** слайдер локаций фотостудии *************/
+
+#slider_presents {
+  width: 80%;
+  height: 100%;
+  margin: 25% auto;
+  perspective: 50em;
+  transform-style: preserve-3d;
+}
+
+.slider_presents,
+input[type="radio"] {
+  display: none;
+}
+
+#slider_presents>label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+/********************** функции слайдера *********************/
+
+/* #s1:checked~#slide1, #s2:checked~#slide2, #s3:checked~#slide3, #s4:checked~#slide4, #s5:checked~#slide5{
+  transform: translate3d(0%, 0, 0px);
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+} */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+  transform: translate3d(15%, 0, -100px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+  transform: translate3d(30%, 0, -250px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+  transform: translate3d(-30%, 0, -250px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+  transform: translate3d(-15%, 0, -100px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+div.prv {
+  background-image: url("/img/prv.png");
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: -40px;
+  float: left;
+}
+
+div.nxt {
+  background-image: url("/img/nxt.png");
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 40px;
+  float: right;
+}
+
+.press_text>p {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*************** слайдер локаций фотостудии *************/
+section.src {
+  background-image: url(/img/back_section.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.services>a {
+  display: block;
+  padding-top: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  margin-bottom: 60px;
+}
+
+.detail_srv {
+  margin-top: 60px;
+  min-height: 635px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 100px;
+}
+
+.detail_srv>h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.detail_srv>p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Gotham Pro Black";
+}
+
+.detail_srv>ul {
+  font-size: 1.2rem;
+  padding-left: 3rem;
+}
+
+.detail {
+  display: block;
+  width: 195px;
+  background-color: #7e5d4c;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  margin-top: 90%;
+}
+
+/*************** секция услуг *************/
+
+.about_us>a {
+  display: block;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  margin-bottom: 60px;
+}
+
+#about_us_box1 {
+  height: 340px;
+  background-image: url(/img/press_photo1.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box1>p {
+  background-color: #ffffff80;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8%;
+  font-size: 0rem;
+  transition-property: all;
+  transition: 500ms;
+}
+
+#about_us_box1>p>span {
+  font-family: "Gotham Pro Black";
+  font-size: 3rem;
+}
+
+#about_us_box1>p:hover {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+#about_us_box2 {
+  height: 340px;
+  background-image: url(/img/press_photo2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box3 {
+  height: 340px;
+  background-image: url(/img/press_photo3.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box4 {
+  height: 340px;
+  background-image: url(/img/press_photo4.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box5 {
+  height: 340px;
+  background-image: url(/img/press_photo5.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box6 {
+  height: 340px;
+  background-image: url(/img/press_photo6.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#about_us_box6>p {
+  background-color: #ffffff80;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8%;
+  font-size: 0rem;
+  transition-property: all;
+  transition: 500ms;
+}
+
+#about_us_box6>p>span {
+  font-family: "Gotham Pro Black";
+  font-size: 3rem;
+}
+
+#about_us_box6>p:hover {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+#about_us_box7 {
+  height: 340px;
+  background-image: url(/img/press_photo7.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#about_us_box7>p {
+  background-color: #ffffff80;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8%;
+  font-size: 0rem;
+  transition-property: all;
+  transition: 500ms;
+}
+
+#about_us_box7>p>span {
+  font-family: "Gotham Pro Black";
+  font-size: 3rem;
+}
+
+#about_us_box7>p:hover {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+#about_us_box8 {
+  height: 340px;
+  background-image: url(/img/press_photo8.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 135px;
+}
+
+#about_us_box8>p {
+  background-color: #ffffff80;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8%;
+  font-size: 0rem;
+  transition-property: all;
+  transition: 500ms;
+}
+
+#about_us_box8>p>span {
+  font-family: "Gotham Pro Black";
+  font-size: 3rem;
+}
+
+#about_us_box8>p:hover {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+/*************** секция услуг *************/
+/************** отправка формы ************/
+.sign_up_form {
+  background-image: url(/img/back_form_sign_up.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.nav_sign {
+  padding: 95px;
+  text-align: center;
+}
+
+.sign_up_form a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+}
+
+.sign_up {
+  height: 535px;
+  width: 1145px;
+  background-image: url(/img/back_form.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  padding-right: 50px;
+}
+
+.form-group {
+  position: relative;
+  width: 650px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.form-group>input {
+  border-radius: 25px;
+  padding-left: 50px;
+}
+
+.form-group>i {
+  position: absolute;
+  right: 0px;
+  color: rgb(56, 56, 56);
+  padding: 10px;
+}
+
+.sign_up>span {
+  display: block;
+  margin-left: 50%;
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: "Gotham Pro Black";
+  font-size: 3rem;
+}
+
+.send {
+  width: 195px;
+  background-color: #7e5d4c;
+  color: #ffffff;
+  border: none;
+  margin-left: 60%;
+  margin-top: 50px;
+}
+
+.box_sign_up_form {
+  margin-bottom: 200px;
+}
+
+/************** отправка формы ************/
+/************** форма контактов ************/
+.contact {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+}
+
+.contact_box {
+  padding: 70px 0px;
+  font-size: 1.2rem;
+}
+
+.contact_box_map {
+  margin-bottom: 70px;
+}
+
+.contact_box_map iframe {
+  height: 550px;
+  width: 100%;
+
+}
+
+footer {
+  background-image: url(/img/back_footer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.social_networks img {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.social_networks > * + * {
+  margin-left: 50px;
+}
+.author{
+text-align: right;
+}
+.author p {
+  padding-top: 25px;
+  display: inline-block;
+  color: #fff;
+  text-align: end;
+}
